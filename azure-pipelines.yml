@@ -29,3 +29,9 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+# Publish Pipeline Artifact
+- task: PublishPipelineArtifact@0
+  inputs:
+    #artifactName: 'drop' 
+    targetPath:$(Build.ArtifactStagingDirectory)
