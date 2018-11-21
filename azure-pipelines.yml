@@ -31,4 +31,4 @@ steps:
     configuration: '$(buildConfiguration)'
 
 # Publish Pipeline Artifact
-- task: PublishPipelineArtifact@1
+- task: PublishPipelineArtifact@0
