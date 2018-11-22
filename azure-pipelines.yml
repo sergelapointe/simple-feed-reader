@@ -32,3 +32,6 @@ steps:
 
 # Publish Pipeline Artifact
 - task: PublishPipelineArtifact@0
+  inputs:
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    artifactName: drop
